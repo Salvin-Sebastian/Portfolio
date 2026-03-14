@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+</head>
+<body>
+  <div id="scroll-progress"></div>
+
+  <canvas id="matrix-bg"></canvas>
+  <canvas id="particle-canvas" style="position:fixed;inset:0;z-index:0;pointer-events:none;opacity:0.2;"></canvas>
+  <div class="scanlines"></div>
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <nav>
+    <a class="nav-logo" href="index.html">PORT<span>FOLIO</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="certificates.html">Certificates</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-toggle"><span></span><span></span><span></span></div>
+  </nav>
+
+  <div class="page-wrapper">
+
+    <div class="page-hero">
+      <div class="breadcrumb"><a href="index.html">HOME</a> <span>/</span> PROJECTS</div>
+      <h1 class="page-hero-title">My <span class="accent">Projects</span></h1>
+      <p class="page-hero-sub">// THINGS I BUILT AND BROKE </p>
+    </div>
+
+    <section>
+      <div class="projects-grid">
+
+        <!--
+          ✏️ HOW TO ADD A PROJECT:
+          1. Copy your project screenshot to: images/projects/
+          2. Duplicate a project-card block below
+          3. Update: image, title, description, tags, GitHub link
+          4. Replace placeholder emoji with: <img src="images/projects/project.jpg" alt="..." />
+        -->
+
+        <!-- PROJECT 1 -->
+        <div class="project-card card reveal">
+          <div class="project-image">
+            <img src="{css,js,images/Pojects/project1.jpg" alt="Portfolio"/>
+          </div>
+          <div class="project-body">
+            <div class="project-title">Portfolio Web-Site</div>
+            <div class="project-desc">
+              This is a responsive personal portfolio website created to showcase my web development skills, projects, and professional information. The website features a modern design with smooth navigation and organized sections including About, Skills, Projects, and Contact. It is developed using HTML, CSS, and JavaScript with a focus on clean UI, responsiveness, and user-friendly interaction. The goal of this project is to present my work in a professional way and provide an easy way for visitors to explore my projects and get in touch.
+            </div>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">PHP</span>
+              <span class="tag">Python</span>
+            </div>
+            <div class="project-links">
+              <!-- ✏️ EDIT: Replace # with actual GitHub link -->
+              <a href="#" class="btn btn-sm" target="_blank">⌨️ GitHub</a>
+              <a href="#" class="btn btn-sm" target="_blank">🔗 Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="footer-social">
+      <a href="#" target="_blank">⌨️</a>
+      <a href="#" target="_blank">💼</a>
+      <a href="#" target="_blank">📸</a>
+      <a href="https://wa.me/918590796458" target="_blank">💬</a>
+    </div>
+    <p class="footer-text">© <span id="year"></span> <span class="accent">SALVIN SEBASTIAN</span> — All Rights Reserved</p>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </footer>
+
+  <a href="https://wa.me/918590796458" class="whatsapp-float" target="_blank">💬</a>
+  <script src="js/animations.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
